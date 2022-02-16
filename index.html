@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="title">Калькулятор чаевых</h1>
+        <div class="form">
+            <label class="form__label">
+                Сумма по счёту
+                <input class="form__input1" type="number" />
+            </label>
+            <label class="form__label">
+                Качество обслуживания
+                <select class="form__input2">
+                    <option value="0">Плохое (0%)</option>
+                    <option value="5">Нормальное (5%)</option>
+                    <option value="10">Хорошее (10%)</option>
+                    <option value="15">Отличное (15%)</option>
+                </select>
+            </label>
+            <label class="form__label">
+                Количество человек
+                <input class="form__input3" type="number" />
+            </label>
+            <div class="form__buttons">
+                <button class="form__button_main">Посчитать</button>
+                <button class="form__button">Сбросить</button>
+            </div>
+        </div>
+        <div class="results">
+            <div class="results__item results__item_tip">
+                <p class="results__name">Чаевые:</p>
+                <p class="results__value1">___₽</p>
+                <p class="results__note">(с каждого)</p>
+            </div>
+            <div class="results__item results__item_total">
+                <p class="results__name">Всего:</p>
+                <p class="results__value2">___₽</p>
+                
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
